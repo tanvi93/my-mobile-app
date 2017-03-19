@@ -1,0 +1,42 @@
+div.desc {
+padding: 15px;
+text-align: center;
+}
+
+div.img-thumbnail{
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.col-sm-6  {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.checkbox{
+  float: left;
+  width: 75%;
+
+}
+
+div.row {
+  float: right ;
+  width: 75%;
+display:inline;
+}
+
+div.img{
+    float: right;
+}
+
+div.all{
+  clear:left;
+}
+
+div.check{
+  clear: left ;
+}

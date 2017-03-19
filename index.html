@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>single_page_app</title>
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/handlebars/handlebars.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+  	<script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+  </head>
+
+  <body>
+    <div class="all-products page">
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">SINGLE PAGE APP</a>
+          <button class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class = "filters">
+        <ul class="nav navbar-nav navbar-collapse collapse" id="menu">
+          <li class="dropdown"><a href="#">Manufacturer</a>
+            <div class="dropdown-content">
+        <label><input type="checkbox" name="manufacturer" value="apple">Apple</label><br>
+        <label><input type="checkbox" name="manufacturer" value="samsung">Samsung</label><br>
+        <label><input type="checkbox" name="manufacturer" value="htc">HTC</label><br>
+        <label><input type="checkbox" name="manufacturer" value="nokia">Nokia</label><br>
+        <label><input type="checkbox" name="manufacturer" value="zte">ZTE</label><br>
+        <label><input type="checkbox" name="manufacturer" value="sony">Sony</label><br>
+      </div>
+    </li>
+          <li class="dropdown"><a href="#">Storage</a>
+            <div class="dropdown-content">
+          <label><input type="checkbox" value="16" name="storage">16 GB</label><br>
+          <label><input type="checkbox" value="32" name="storage">32 GB</label><br><br>
+        </div>
+          </li>
+          <li class="dropdown"><a href="#">OS</a>
+            <div class="dropdown-content">
+          <label><input type="checkbox" value="android" name="os">Android</label><br>
+          <label><input type="checkbox" value="ios" name="os">iOS</label><br>
+          <label><input type="checkbox" value="windows" name="os">Windows</label><br><br>
+        </div>
+          </li>
+          <li class="dropdown"><a href="#">Camera</a>
+            <div class="dropdown-content">
+            <label><input type="checkbox" value="5" name="camera">5 Mpx</label><br>
+            <label><input type="checkbox" value="8" name="camera">8 Mpx</label><br>
+            <label><input type="checkbox" value="12" name="camera">12 Mpx</label><br>
+            <label><input type="checkbox" value="15" name="camera">15 Mpx</label><br><br>
+          </div>
+          </li>
+        </ul>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+       <button href="" class="btn btn-info navbar-btn" id="refreshButton">BACK TO ARTICLE</button>
+     </ul>
+      </div>
+    </nav>
+
+
+    <ul class="products-list">
+      <div class="container">
+        <div class="single-product page">
+          <div class="row" >
+      <script id="products-template" type="x-handlebars-template">​
+        {{#each this}}
+          <span class="col-sm-3 text-center"  data-index="{{id}}">
+
+            <a href="#myModal1" data-toggle="modal" class="image"><img src="{{image.small}}" height="180" alt="{{name}}"/></a><br>
+            <div class= "dropdown" id = "name"><a href="#" > {{name}} </a>
+              <div class="dropdown-content">
+              <div class="product-description">
+								<p><span><b>Manufacturer:</b> </span>{{specs.manufacturer}}</p>
+								<p><span><b>Storage:</b> </span>{{specs.storage}} GB</p>
+								<p><span><b>OS:</b> </span>{{specs.os}}</p>
+								<p><span><b>Camera:</b> </span>{{specs.camera}} Mpx</p>
+							</div>
+					<p><button>Buy Now!</button>
+          <span class="product-price" style= "float:right;"><b>{{price}}$</b></span>
+          </p>
+          </div>
+          </div>
+          </span>
+        {{/each}}
+      </script> 
+    </div>
+  </div>
+</div>
+  </ul>
+</div>
+
+ <!-- Modal -->
+ <div class="single-product page">
+ <div class="modal fade" id="myModal1" tabindex=
+       <div class="modal-header">
+         <button href="" type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+       </div>
+       <div class="modal-body">
+           <h3></h3>
+           <img src=""/>
+           <p></p>
+     </div><!-- /.modal-content -->
+   </div><!-- /.modal-dialog -->
+ </div><!-- /.modal -->
+</div>
+</div>
+
+
+<script src="/home/bridgeit/Documents/tanvi/myapp/assets/js/script.js"></script>
+  </body>
+</html>

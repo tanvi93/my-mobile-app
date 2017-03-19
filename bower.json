@@ -1,0 +1,24 @@
+{
+  "name": "myapp",
+  "homepage": "https://github.com/tanviraul/program",
+  "authors": [
+    "tanviraul <tanviraul23@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "handlebars": "^4.0.5",
+    "google-apis": "^1.1.7",
+    "google-fonts": "*"
+  }
+}
